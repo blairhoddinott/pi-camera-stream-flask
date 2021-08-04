@@ -1,0 +1,14 @@
+[flake8]
+max-line-length = 99
+exclude =
+	*.pyc,
+	__pycache__
+	scripts/*
+filename =
+	*.py
+ignore =
+	W191, # Allows for tabs instead of 4 spaces
+	W504, # Allows multiple lined operations
+	W605, # Flake8 rambled on about something irrelevant
+	E722  # Allows us to use generic "except"
+	E128  # Tabs and line length rules sometimes conflict explosively
